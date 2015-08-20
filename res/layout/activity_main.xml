@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout 
+    android:id="@+id/MainLayout" 
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent" 
+    android:orientation="vertical" 
+    android:background="@drawable/clouds_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+<TextView 
+     android:id="@+id/textView"
+     android:layout_height="wrap_content" 
+     android:layout_width="wrap_content" 
+     android:layout_gravity="center_horizontal" 
+     android:textColor="#00ffff"
+     android:text="Find My Phone v1.0" 
+     android:textAppearance="?android:attr/textAppearanceMedium"/>
+<requestFocus/>
+
+<EditText 
+    android:id="@+id/editText2" 
+    android:layout_height="wrap_content" 
+    android:layout_width="match_parent"
+    android:textColor="#00ffff" 
+    android:hint="Enter a passphrase in..." 
+    android:ems="10">
+<requestFocus/>
+</EditText>
+<Button 
+    android:id="@+id/button2" 
+    android:layout_height="wrap_content" 
+    android:layout_width="match_parent"
+    android:textColor="#00ffff" 
+    android:text="Press to save passphrase" 
+    android:layout_margin="10dp"
+    android:background="#0000ff"
+    android:onClick="SAVEPHRASE"/>
+
+<Button 
+    android:id="@+id/button3" 
+    android:layout_height="wrap_content" 
+    android:layout_width="match_parent"
+    android:textColor="#00ffff" 
+    android:text="Press to edit permission #'s"
+    android:layout_margin="10dp" 
+    android:background="#0000ff"
+    android:onClick="EDITNUMBERS"/>
+<TextView 
+    android:id="@+id/ContactsPush"
+     android:layout_height="wrap_content" 
+     android:layout_width="wrap_content" 
+     android:layout_gravity="center_horizontal"
+     android:textColor="#00ffff" 
+     android:text="Click on contacts to send them a Passphrase" 
+     android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+<ListView 
+    android:id="@+id/listView1" 
+    android:layout_height="wrap_content" 
+    android:layout_width="match_parent" 
+    android:clickable="true" 
+    android:layout_margin="10dp"
+    android:background="#00ffff"
+    android:layout_alignParentTop="true" 
+    android:layout_alignParentLeft="true"/>
+</LinearLayout>

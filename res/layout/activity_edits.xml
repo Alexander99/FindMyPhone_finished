@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+
+<LinearLayout 
+	android:id="@+id/MainLayout" 
+	android:layout_height="fill_parent" 
+	android:layout_width="fill_parent" 
+	android:orientation="vertical" 
+	android:background="@drawable/clouds_background"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+
+<TextView 
+    android:id="@+id/textView" 
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content" 
+    android:layout_gravity="center_horizontal"
+    android:textColor="#00ffff" 
+    android:text="Find My Phone v1.0" 
+    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+<EditText 
+    android:id="@+id/editText3" 
+    android:layout_height="wrap_content" 
+    android:layout_width="match_parent" 
+    android:hint="Enter in a number..." 
+    android:textColor="#00ffff" 
+    android:inputType="numberSigned|numberDecimal" 
+    android:ems="10"/>
+
+<Button 
+    android:id="@+id/button5" 
+    android:layout_height="wrap_content" 
+    android:layout_width="match_parent" 
+    android:text="Press to Add to Permissions"
+    android:layout_margin="10dp"
+    android:background="#0000ff"
+    android:textColor="#00ffff" 
+    android:onClick="ADDNUMBER"/>
+
+<Button 
+    android:id="@+id/button6" 
+    android:layout_height="wrap_content" 
+    android:layout_width="match_parent" 
+    android:text="Press to Delete from Permissions"
+    android:layout_margin="10dp"
+    android:background="#0000ff"
+    android:textColor="#00ffff"  
+    android:onClick="DELNUMBER"/>
+
+<Button
+    android:id="@+id/button4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#0000ff"
+    android:onClick="GOBACK"
+    android:text="Press to return to main screen"
+    android:textColor="#00ffff" />
+
+<TextView 
+    android:id="@+id/textView2" 
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content" 
+    android:layout_gravity="center_horizontal" 
+    android:text="Click to change PassPhrase sent"
+    android:textColor="#00ffff"  
+    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+<ListView 
+    android:id="@+id/listView1" 
+    android:layout_height="wrap_content" 
+    android:layout_width="match_parent" 
+    android:clickable="true"
+    android:background="#00ffff" 
+    android:layout_alignParentTop="true" 
+    android:layout_alignParentLeft="true"/>
+</LinearLayout>
